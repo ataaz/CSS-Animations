@@ -1,0 +1,47 @@
+.border-wrap {
+    position: absolute;
+    left: 41%;
+    top: 37%;
+    max-width: 435px;
+    -webkit-transform: translate(-17%,-54%);
+    -ms-transform: translate(-17%,-54%);
+    transform: translate(-17%,-54%);
+    width: 100%;
+    z-index: 1;
+}
+
+
+.border-wrap .ball {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fa7070;
+    top: 49%;
+    left: 45%;
+    z-index: 22
+}
+
+#animate-border {
+    max-width: 775px;
+    z-index: 2;
+    opacity: .5;
+}
+
+.path {
+    stroke-dasharray: 6;
+    -webkit-animation: B 30s linear infinite;
+    animation: B 30s linear infinite
+}
+
+@-webkit-keyframes B {
+    0% {
+        stroke-dashoffset: 1000
+    }
+}
+
+@keyframes B {
+    0% {
+        stroke-dashoffset: 1000
+    }
+}
